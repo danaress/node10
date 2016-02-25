@@ -1,0 +1,1 @@
+var Applicant = require('../models/model.js')
