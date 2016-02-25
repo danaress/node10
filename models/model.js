@@ -5,7 +5,6 @@ var countrySchema = mongoose.Schema({
     frenchName: String, 
     localName: String, 
     region: String,
-
 })
 
 module.exports = mongoose.model('Country', countrySchema)

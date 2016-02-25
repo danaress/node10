@@ -1,5 +1,5 @@
 var Country = require('../models/model.js')
-var allCountries = require('../models/countries.json')
+// var allCountries = require('../models/countries.json')
 
 function getCountries (req, res){
 	console.log("test");
@@ -10,5 +10,5 @@ function getCountries (req, res){
 }
 
 module.exports = {
-	getCountries : getCountries,
+	getCountries : getCountries
 }
