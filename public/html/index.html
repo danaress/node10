@@ -5,15 +5,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">
  <!--    <link rel="stylesheet" href="../stylesheets/style.css"> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
+  	<script src="../javascripts/main.js"></script>
   </head>
   	<body ng-controller="applicantController">
+  	<form action="/countries">
+  		<input type="submit" value="Load Countries"></input>
+  	</form>
+<!--   	<div ng-repeat="countries in allCountries">
+  		<h3>{{countires.name}}</h3>
+  	</div>
+ -->
 
-  	<button ng-click="test()">Load countries</button>
 
 
 
 
-
-	<script src="../javascripts/main.js"></script>
 	</body>
 </html>

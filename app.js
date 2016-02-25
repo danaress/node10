@@ -6,7 +6,7 @@ var mongoose = require('mongoose');
 // Create Express App Object \\
 var app = express();
 
-mongoose.connect('mongodb://localhost/applicants');
+mongoose.connect('mongodb://localhost/countries');
 
 // Application Configuration \\
 app.use(bodyParser.json());
@@ -19,14 +19,12 @@ var controller = require("./controllers/controller.js")
 var countries = require("./models/countries.json")
 
 app.get('/', function(req, res) {
-	res.send(countries);
 	res.sendFile('html/index.html', {root : './public'});
 });
 
 
-app.get('/countries', function(req, res) {
-	res.send("TEST");
-});
+app.get('/countries', controller.getCountries)
+
 
 // Creating Server and Listening for Connections \\
 var port = 3000
