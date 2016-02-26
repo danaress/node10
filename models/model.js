@@ -7,4 +7,4 @@ var countrySchema = mongoose.Schema({
     region: String,
 })
 
-module.exports = mongoose.model('Country', countrySchema)
+module.exports = mongoose.model('countries', countrySchema)

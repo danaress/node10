@@ -8,13 +8,12 @@
   	<script src="../javascripts/main.js"></script>
   </head>
   	<body ng-controller="applicantController">
-  	<form action="/countries">
-  		<input type="submit" value="Load Countries"></input>
-  	</form>
-<!--   	<div ng-repeat="countries in allCountries">
-  		<h3>{{countires.name}}</h3>
-  	</div>
- -->
+  		<button type="submit" ng-click="load()" value="Load Countries">Load Countries</button>
+
+  		<div ng-repeat="list in countrylist">
+  			<h3>{{list.name}}</h3>
+  		</div>
+
 
 
 
