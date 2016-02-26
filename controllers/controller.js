@@ -8,6 +8,17 @@ function getCountries (req, res){
 	})
 }
 
+function searchCountry(req, res){
+	console.log("search");
+	countries.find({name: req.body.list1}, function(err, doc){
+		if (err){
+			res.send(err);
+		} else {
+			res.send(doc);
+		}
+	})}
+
 module.exports = {
-	getCountries : getCountries
+	getCountries : getCountries,
+	searchCountry : searchCountry
 }

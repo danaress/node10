@@ -16,6 +16,15 @@ angular.module('JobApp')
 			})
 		}
 
+		$scope.search = function(){
+			$http.post('/search', $scope.searchValue)
+			.then(function(returnInfo){
+				$scope.test1 = returnInfo.data
+				console.log("search works");
+				console.log($scope.test1);
+			})
+		}
+
 
 
 	}]);

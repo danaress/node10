@@ -25,6 +25,8 @@ app.get('/', function(req, res) {
 
 app.get('/countries', controller.getCountries)
 
+app.post('/search', controller.searchCountry)
+
 
 // Creating Server and Listening for Connections \\
 var port = 3000
