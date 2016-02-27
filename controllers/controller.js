@@ -14,15 +14,15 @@ function searchCountry(req, res){
 		if (err){
 			res.send(err);
 		} else {
-			res.send(doc);
+			newcountries.save({test1}, function(err, dox){
 		}
 	})}
 
 
-function searchCountry(req, res){
-	db.newCountries.save({test1}, function(err, dox){
-		res.send(dox)
-	})}
+// function searchCountry(req, res){
+// 	newcountries.save({test1}, function(err, dox){
+// 		res.send(dox)
+// 	})}
 
 
 module.exports = {
