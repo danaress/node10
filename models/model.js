@@ -7,4 +7,12 @@ var countrySchema = mongoose.Schema({
     region: String,
 })
 
+var newCountry = mongoose.Schema({
+	name: String, 
+    frenchName: String, 
+    localName: String, 
+    region: String,
+})
+
+module.exports = mongoose.model('newcountries', countrySchema)
 module.exports = mongoose.model('countries', countrySchema)
